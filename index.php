@@ -21,6 +21,10 @@ include("function.php");
     $new=removeDups($numbers);
     echo "</br>";
     printArray($new);
+    $new2=distribution($numbers);
+
+    print_r($new2);
+
 ?>
 </body>
 </html>
