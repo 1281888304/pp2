@@ -1,6 +1,7 @@
 <?php
 ini_set("display_errors",1);
 error_reporting(E_ALL);
+include("function.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,12 +14,13 @@ error_reporting(E_ALL);
 <?php
     echo "“PHP Array Practice";
     $numbers=array(7,9,8,9,8,8,6);
-    function printArray($array){
-        foreach ($array as $items){
-            echo $items . "</br>";
-        }
-    }
+    echo "</br>";
+
     printArray($numbers);
+    echo largest($numbers);
+    $new=removeDups($numbers);
+    echo "</br>";
+    printArray($new);
 ?>
 </body>
 </html>
