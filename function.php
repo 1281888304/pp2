@@ -4,3 +4,9 @@ function printArray($array){
         echo $items . "</br>";
     }
 }
+function largest($array){
+    return max($array);
+}
+function removeDups($array){
+    return array_unique($array);
+}
