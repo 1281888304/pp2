@@ -10,3 +10,9 @@ function largest($array){
 function removeDups($array){
     return array_unique($array);
 }
+function distribution($array){
+
+    $answer=array_count_values($array);
+    ksort($answer);
+    return $answer;
+}
